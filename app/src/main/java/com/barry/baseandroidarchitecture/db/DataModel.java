@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "data_table")
 public class DataModel {
-
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     private int id;
@@ -16,8 +15,7 @@ public class DataModel {
     @ColumnInfo(name = "col2")
     private String col2;
 
-    public DataModel(int id, String col1, String col2) {
-        this.id = id;
+    public DataModel(String col1, String col2) {
         this.col1 = col1;
         this.col2 = col2;
     }

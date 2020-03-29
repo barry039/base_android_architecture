@@ -18,7 +18,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /*
     ==================================
-    固定常用 func設置
+    固定init func設置
     ===================================
     */
     abstract void bindView();

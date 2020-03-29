@@ -22,7 +22,7 @@ public class DataRepository {
 
     public void insert(DataModel data)
     {
-//        new insertAsyncTask(mDataDao).execute(data);
+        new insertAsyncTask(mDataDao).execute(data);
     }
     public void insert(List<DataModel> data)
     {

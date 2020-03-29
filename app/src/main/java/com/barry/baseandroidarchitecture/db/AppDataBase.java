@@ -1,6 +1,7 @@
 package com.barry.baseandroidarchitecture.db;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.room.Database;
@@ -35,6 +36,7 @@ public abstract class AppDataBase extends RoomDatabase {
                 public void onOpen (@NonNull SupportSQLiteDatabase db){
                     super.onOpen(db);
                     // db open
+                    Log.e("db","opened");
                 }
             };
 }
